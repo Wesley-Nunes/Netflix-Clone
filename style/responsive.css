@@ -1,0 +1,23 @@
+@media screen and (max-width: 800px) {
+	header .container {
+		flex-direction: column;
+	}
+
+	header nav a {
+		margin: 0 0.5em;
+	}
+
+	.serie-principal {
+		background-size: contain;
+		background-repeat: no-repeat;
+	}
+
+	.serie-principal .titulo {
+		font-size: 1.6em;
+	}
+
+	.serie-principal .descricao {
+		width: 70%;	
+	}
+
+}

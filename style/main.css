@@ -1,0 +1,204 @@
+:root {
+	--red: hsl(357, 92%, 47%);
+	--black: hsl(0, 0%, 8%);
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;	
+	font-size: 14px;
+}
+
+
+/* Elementos Base*/
+
+body {
+	background: var(--black);
+	margin-left: 2em;	
+	font-family: "Times New Roman", Times, serif;
+}
+
+header .container {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+}
+
+header .logo {
+	font: 3em "Arial Black", sans-serif;
+	color: var(--red);
+}
+
+header nav a {
+	text-decoration: none;
+	margin: 0 2em;
+	color: hsl(0, 0%, 67%);
+}
+
+header nav a:hover {
+	color: hsl(0, 0%, 100%);
+}
+
+
+/* Série Principal */
+
+.serie-principal {
+	height: 43em;
+	background: linear-gradient(to right, hsla(0, 0%, 8%, 1), hsla(0, 0%, 8%, 0.1)100%), url('../img/capa-sabrina.jpeg');
+	background-size: cover;
+	color: hsl(0, 0%, 100%);
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+
+	margin-bottom: 1em;
+
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.serie-principal .container > * {
+	margin-bottom: 1em;
+}
+
+.serie-principal .img-titulo {
+	height: 7em;
+	margin-bottom: 2em;
+}
+
+.serie-principal .titulo {
+	font-size: 1.8em;
+}
+
+.serie-principal .serie-info {
+	color: hsl(0, 0%, 67%);
+}
+
+.serie-principal .descricao {
+	width: 60%;
+	font-size: 1.2em;
+}
+
+.serie-principal .botao {
+	border: none;
+	color: hsl(0, 0%, 100%);
+	font-weight: 600;
+
+	padding: 1em 2em;
+
+	cursor: pointer;
+	transition: .3s ease all;
+}
+
+.serie-principal .botao:hover {
+	box-shadow: 0 0 2px 1px var(--red);
+}
+
+.serie-principal .botao:nth-child(1) {
+	background-color: var(--red);
+}
+
+.serie-principal .botao:nth-child(2) {
+	background-color: var(--black);
+}
+
+.iniciar-video {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 10000;
+	background: hsla(0, 0%, 0%, 0.95);
+	width: 100%;
+	height: 100%;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	visibility: hidden;
+	opacity: 0;
+}
+
+.video{
+	position: relative;
+	max-width: 900px;
+	outline: none;
+}
+
+.iniciar-video.active {
+	visibility: visible;
+	opacity: 1;
+}
+
+/* Botão de Fechar*/
+.iniciar-video .fas{
+	color: red;
+	position: fixed;
+	top: 20%;
+	left: 75%;
+	transform: translate(-50%, -50%);
+}
+
+/* Carrossel */
+
+.carrossel-filmes h2 {
+	font: 1.5em Arial, sans-serif;
+	color: hsl(0, 0%, 100%);
+	margin-bottom: 0.8em;
+}
+
+.box-filme {
+	height: 100%;
+	width: 100%;
+	display: block;
+}
+
+.item h3 {
+	font: 400 1.2em Arial, sans-serif;
+	color: hsl(0, 0%, 100%);
+	text-align: center;
+	margin: 1em;	
+}
+
+
+/* Footer */
+
+footer {
+	margin-bottom: 3em;
+}
+
+footer h3 {
+	font-size: 1.5em;
+	margin-bottom: 1em;
+	color: hsl(0, 0%, 60%);
+}
+
+footer .container {
+	width: 70%;
+}
+
+footer .container ul > li {
+	display: inline-block;
+	min-width: 100px;
+	width: 25%;
+	height: 2em;
+	list-style: none;
+	box-sizing: border-box;
+	margin-bottom: 1.5em;
+	padding-right: 1em;
+	vertical-align: top; 
+}
+
+footer .container a {
+	text-decoration: none;
+	color: hsl(0, 0%, 60%);
+}
+
+footer .container a:hover {
+	text-decoration: underline;
+}
+

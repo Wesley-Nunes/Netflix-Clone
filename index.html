@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style/main.css">
+
+	<!-- resposividade -->
+	<link rel="stylesheet" type="text/css" href="style/responsive.css">
+
+	<!-- owl css -->
+	<link rel="stylesheet" type="text/css" href="style/owlCarousel/owl.carousel.min.css">
+	<link rel="stylesheet" type="text/css" href="style/owlCarousel/owl.theme.default.min.css">
+
+	<title>NETFLIX CLONE</title>
+</head>
+<body>
+	<header>
+		<div class="container">
+			<h2 class="logo">NETFLIX</h2>
+			<nav>
+				<a href="#">Home</a>
+				<a href="#">Em Alta</a>
+				<a href="#">Filmes</a>
+				<a href="#">Séries</a>
+				<a href="#">Minha Lista</a>
+			</nav>
+		</div>
+	</header>
+	
+	<main>
+		<div class="serie-principal">
+			<div class="container">
+				<img src="img/titulo.png"  alt="O Mundo Sombrio de Sabrina" class="img-titulo">
+				<h3 class="titulo">O Mundo Sombrio de Sabrina</h3>
+				<div class="serie-info">
+					2018 | 16 | 4 temporadas | Séries de fantasia
+				</div>
+				<p class="descricao">Bruxa e também mortal, a jovem Sabrina Spellman fica dividida entre a vida normal de adolescente e o legado de sua família feiticeira.</p>
+				<div class="cast">Estrelando: Kiernan Shipka,Ross Lynch,Miranda Otto
+				</div>
+				<div class="botoes">
+					<button role="button" class="botao" onclick="play_video();">
+						<i class="fas fa-play"></i>
+						ASSISTIR
+					</button>
+					<button role="button" class="botao" onclick="add_lista();">
+						<i class="fas fa-plus"></i>
+						MINHA LISTA
+					</button>		
+				</div>
+			</div>			
+		</div>
+
+		<div class="iniciar-video">
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/FyxPvL0Fb8M" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen enablejsapi=1 class="video"></iframe>
+			<i class="fas fa-times-circle fa-3x" onclick="stop_video();"> </i>
+		</div>
+		
+
+	</main>
+
+	<div class="carrossel-filmes">
+		<h2>Em Alta na Netflix</h2>
+		<div class="owl-carousel owl-theme">
+			<div class="item">
+				<img src="img/em-alta-01.jpeg" alt="Peaky Blinders" class="box-filme">
+				<h3>Peaky Blinders: Sangue, Apostas e Navalhas</h3>
+			</div>
+			<div class="item">
+				<img src="img/em-alta-02.jpeg" alt="Peaky Blinders" class="box-filme">
+				<h3>Por Trás de Seus Olhos</h3>
+			</div>
+			<div class="item">
+				<img src="img/em-alta-03.jpeg" alt="Peaky Blinders" class="box-filme">
+				<h3>Zoe e Raven</h3>
+			</div>
+			<div class="item">
+				<img src="img/em-alta-04.jpeg" alt="Peaky Blinders" class="box-filme">
+				<h3>The Crown</h3>
+			</div>
+			<div class="item">
+				<img src="img/em-alta-05.jpeg" alt="Peaky Blinders" class="box-filme">
+				<h3>The Last Kingdom</h3>
+			</div>
+			<div class="item">
+				<img src="img/em-alta-06.jpeg" alt="Peaky Blinders" class="box-filme">
+				<h3>Sex Education</h3>
+			</div>
+		</div>
+
+		<h2>Filmes</h2>
+		<div class="owl-carousel owl-theme">
+			<div class="item">
+				<img src="img/filmes-01.jpeg" alt="Peaky Blinders" class="box-filme">
+				<h3>O Retorno de Johnny English</h3>
+			</div>
+			<div class="item">
+				<img src="img/filmes-02.jpeg" alt="Peaky Blinders" class="box-filme">
+				<h3>Kick-Ass – Quebrando tudo</h3>
+			</div>
+			<div class="item">
+				<img src="img/filmes-03.jpeg" alt="Peaky Blinders" class="box-filme">
+				<h3>Free Fire: O Tiroteio</h3>
+			</div>
+			<div class="item">
+				<img src="img/filmes-04.jpeg" alt="Peaky Blinders" class="box-filme">
+				<h3>Quem quer ser um milionário?</h3>
+			</div>
+			<div class="item">
+				<img src="img/filmes-05.jpeg" alt="Peaky Blinders" class="box-filme">
+				<h3>O Anjo do Mossad</h3>
+			</div>
+			<div class="item">
+				<img src="img/filmes-06.jpeg" alt="Peaky Blinders" class="box-filme">
+				<h3>Calibre</h3>
+			</div>
+		</div>
+
+		<h2>Séries</h2>
+		<div class="owl-carousel owl-theme">
+			<div class="item">
+				<img src="img/series-01.jpeg" alt="Peaky Blinders" class="box-filme">
+				<h3>Sherlock</h3>
+			</div>
+			<div class="item">
+				<img src="img/series-02.jpeg" alt="Peaky Blinders" class="box-filme">
+				<h3>Black Mirror</h3>
+			</div>
+			<div class="item">
+				<img src="img/series-03.jpeg" alt="Peaky Blinders" class="box-filme">
+				<h3>Drácula</h3>
+			</div>
+			<div class="item">
+				<img src="img/series-04.jpeg" alt="Peaky Blinders" class="box-filme">
+				<h3>As Crônicas de Frankenstein</h3>
+			</div>
+			<div class="item">
+				<img src="img/series-05.jpeg" alt="Peaky Blinders" class="box-filme">
+				<h3>Black Earth Rising</h3>
+			</div>
+			<div class="item">
+				<img src="img/series-06.jpeg" alt="Peaky Blinders" class="box-filme">
+				<h3>Line of Duty</h3>
+			</div>
+		</div>			
+	</div>	
+
+	<footer>
+		<h3>Dúvidas? Entre em contato.</h3>
+		<div class="container">	
+			<ul>
+				<li>
+					<a href="#">Perguntas frequentes</a>	
+				</li>
+				<li>
+					<a href="#">Conta</a>
+				</li>
+				<li>
+					<a href="#">Imprensa</a>
+				</li>
+				<li>
+					<a href="#">Relações com investidores</a>
+				</li>
+				<li>
+					<a href="#">Carreiras</a>
+				</li>
+				<li>
+					<a href="#">Resgatar cartão pré-pago</a>
+				</li>
+				<li>
+					<a href="#">Comprar cartão pré-pago</a>
+				</li>
+				<li>
+					<a href="#">Formas de assistir</a>
+				</li>
+				<li>
+					<a href="#">Termos de uso</a>
+				</li>
+				<li>
+					<a href="#">Privacidade</a>
+				</li>
+				<li>
+					<a href="#">Preferências de cookies</a>
+				</li>
+				<li>
+					<a href="#">Informações corporativas</a>
+				</li>
+				<li>
+					<a href="#">Entre em contato</a>
+				</li>
+				<li>
+					<a href="#">Teste de velocidade</a>
+				</li>
+				<li>
+					<a href="#">Avisos legais</a>
+				</li>
+				<li>
+					<a href="#">Originais Netflix</a>
+				</li>
+			</ul>							
+		</div>
+	</footer>
+
+	<script src="https://kit.fontawesome.com/2c36e9b7b1.js"></script>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/setup.js"></script>
+</body>
+</html>
